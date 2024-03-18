@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang = "nl">
+<html lang="nl">
 <head>
-  <title>Portfolio van Peter Riksten</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten van Peter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .project-table th, .project-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .project-table th {
+            background-color: #333;
+            color: #fff;
+        }
+        .project-image {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-
-<h1>Portfolio</h1>
-<p>My first paragraph.</p>
-
+    <header>
+        <h1>Projecten van Peter</h1>
+        <p>Welkom op de website van Peter's projecten.</p>
+    </header>
+    <div class="container">
+        <table class="project-table">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Omschrijving</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="project1.html"><img src="project1.jpg" alt="Project 1" class="project-image"></a></td>
+                    <td>Project 1 korte omschrijving</td>
+                </tr>
+                <tr>
+                    <td><a href="project2.html"><img src="project2.jpg" alt="Project 2" class="project-image"></a></td>
+                    <td>Project 2 korte omschrijving</td>
+                </tr>
+                <!-- Voeg meer projecten toe zoals hierboven -->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
