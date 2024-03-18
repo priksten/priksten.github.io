@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f6f6f6;
         }
         header {
             background-color: #333;
@@ -33,12 +33,25 @@
             text-align: left;
         }
         .project-table th {
-            background-color: #333;
+            background-color: #007bff; /* Blauw */
             color: #fff;
+        }
+        .project-table tr:nth-child(even) {
+            background-color: #f2f2f2; /* Licht grijs */
+        }
+        .project-table tr:nth-child(odd) {
+            background-color: #ffffff; /* Wit */
         }
         .project-image {
             max-width: 100px;
             height: auto;
+            margin-right: 10px; /* Ruimte toevoegen tussen afbeelding en tekst */
+        }
+        .project-link:hover {
+            text-decoration: underline; /* Hover-effect toevoegen aan links */
+        }
+        .project-description {
+            padding-right: 20px; /* Ruimte toevoegen aan de rechterkant van de omschrijving */
         }
     </style>
 </head>
@@ -53,20 +66,46 @@
                 <tr>
                     <th>Project</th>
                     <th>Omschrijving</th>
+                    <th>Programmeertaal</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="project1.html"><img src="project1.jpg" alt="Project 1" class="project-image"></a></td>
-                    <td>Project 1 korte omschrijving</td>
+                    <td><a class="project-link" href="https://github.com/priksten/Mars-API-Foto-s"><img src="D:\Portfolio website\Plaatjes Portfolio Site\Mars.png" alt="Mars Foto's" class="project-image"></a></td>
+                    <td class="project-description">Het doel van dit project is om een applicatie te ontwikkelen waarin je foto’s kunt opvragen die door marslanders zijn gemaakt. De bedoeling is dat je hierbij kunt kiezen uit de marslander waarmee foto’s gemaakt zijn, de camera waarmee deze foto’s gemaakt zijn en de datum waarop deze foto’s gemaakt zijn. Hiervoor is ook een GUI ontwikkeld.</td>
+                    <td>Python</td>
                 </tr>
                 <tr>
-                    <td><a href="project2.html"><img src="project2.jpg" alt="Project 2" class="project-image"></a></td>
-                    <td>Project 2 korte omschrijving</td>
+                    <td><a class="project-link" href="https://github.com/priksten/MasterMind"><img src="D:\Portfolio website\Plaatjes Portfolio Site\MasterMind.png" alt="MasterMind" class="project-image"></a></td>
+                    <td class="project-description">Het doel van dit project is om een Mastermind-applicatie te schrijven waarin de computer de geheime code bedenkt en feedback geeft. In deze Mastermind-applicatie zijn er mogelijkheden waarin er op deze basisversie gevarieerd kan worden. Zo kan de gebruiker kiezen of er zes, acht of tien kleuren in het spel zijn. Daarnaast kan de gebruiker aangeven of een kleur in de te raden code meerdere keren gebruikt mag worden.</td>
+                    <td>Python</td>
                 </tr>
-                <!-- Voeg meer projecten toe zoals hierboven -->
+            <tr>
+                    <td><a href="https://github.com/priksten/Lichess-Data-analyse"><img src="D:\Portfolio website\Plaatjes Portfolio Site\Lichess.png" alt="Lichess Data Analyse" class="project-image"></a></td>
+                    <td>Het doel van dit project is om in Python een programma te schrijven dat de schaker inzicht geeft in zijn prestaties. Zo kan de gebruiker inzicht verkrijgen in zijn ratinggeschiedenis en aantallen winstpartijen. De uitvoer is een Excel-bestand met daarin alle relevante tabellen en grafieken. Lichess.org is een online schaakserver waarop schakers van allerlei niveaus tegen elkaar kunnen schaken.</td>
+                    <td>Python</td>
+		</tr>
+                <tr>
+                    <td><a href="https://github.com/priksten/VBA-Lichess-Data-Aanlyse"><img src="D:\Portfolio website\Plaatjes Portfolio Site\Lichess.png" alt="Lichess Data Analyse" class="project-image"></a></td>
+                    <td>Het doel van dit project is om in Python een programma te schrijven dat de schaker inzicht geeft in zijn prestaties. Zo kan de gebruiker inzicht verkrijgen in zijn ratinggeschiedenis en aantallen winstpartijen. De uitvoer is een Excel-bestand met daarin alle relevante tabellen en grafieken. Lichess.org is een online schaakserver waarop schakers van allerlei niveaus tegen elkaar kunnen schaken.</td>
+                    <td>Excel VBA</td>
+		</tr>
+                <tr>
+                    <td><a href="https://github.com/priksten/Kentekenrapport-Genereren"><img src="D:\Portfolio website\Plaatjes Portfolio Site\RDW.png" alt="Lichess Data Analyse" class="project-image"></a></td>
+                    <td>Het doel van dit project is om een programma te ontwikkelen dat op basis van de invoer van een kenteken gegevens opvraagt bij het RDW via een API en vervolgens op basis van voorkeuren van de gebruiker bijbehorend ketekenrapport in MS-Word en PDF genereert</td>
+                    <td>Python</td>
+		</tr>
+                <tr>
+                    <td><a href="https://github.com/priksten/Hemellichamen-observeren"><img src="D:\Portfolio website\Plaatjes Portfolio Site\Celestial.png" alt="Lichess Data Analyse" class="project-image"></a></td>
+                    <td>Het doel van dit project is om een programma te ontwikkelen dat op basis van invoer van de gebruiker en op basis van informatie uit de SIMBAD database gegevens over de zichtbaarheid van hemellichamen weergeeft</td>
+                    <td>Python</td>
+		</tr>
             </tbody>
         </table>
+    </div>
+</body>
+</html>
+
     </div>
 </body>
 </html>
